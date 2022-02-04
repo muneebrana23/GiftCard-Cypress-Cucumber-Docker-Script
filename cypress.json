@@ -1,0 +1,12 @@
+{
+	"baseUrl": "https://dev.simplifyshopping.com",
+	"testFiles": "**/*.feature",
+	"viewportHeight": 768,
+	"viewportWidth": 1280,
+	"chromeWebSecurity": false,
+	"video": false,
+	"retries": {
+		"openMode": 0,
+		"runMode": 1
+	}
+}
