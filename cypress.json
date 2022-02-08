@@ -8,5 +8,13 @@
 	"retries": {
 		"openMode": 0,
 		"runMode": 1
+	},
+
+	"reporter": "mochawesome",
+	"reporterOptions": {
+		"reportDir": "cypress/results/mochAwesome",
+		"overwrite": false,
+		"html": false,
+		"json": true
 	}
 }

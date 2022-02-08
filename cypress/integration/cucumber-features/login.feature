@@ -5,6 +5,5 @@ Feature: Login Feauture Testing for Simplify Shopping
      Scenario: Login as an Admin 
      Given I load the login page
      When I entered valid credentials
-     And I am waiting for 2000 seconds
-     And I tried to create coupen failed scenario
+     And I am waiting for 1000 seconds
      Then I see the error page

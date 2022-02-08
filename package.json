@@ -4,7 +4,12 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"delete:reports": "rm -r cypress/results/*  rm -r mochawesome.json|| true",
+		"prereport": "npm run delete:reports",
+		"cypress:run": "npm run prereport && npx cypress run",
+		"mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochAwesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+		"cypress:e2e": "npm run cypress:run && npm run mochawesome:merge"
 	},
 	"keywords": [],
 	"author": "",
@@ -17,6 +22,11 @@
 		"nonGlobalStepDefinitions": true
 	},
 	"devDependencies": {
+		"cypress-multi-reporters": "^1.5.0",
+		"mocha-junit-reporter": "^2.0.2",
+		"mochawesome": "^7.0.1",
+		"mochawesome-merge": "^4.2.1",
+		"mochawesome-report-generator": "^6.0.1",
 		"prettier": "2.5.1"
 	}
 }
