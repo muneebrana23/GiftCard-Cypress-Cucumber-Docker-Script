@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-08T19:49:58.489Z",
-    "end": "2022-02-08T19:50:20.950Z",
-    "duration": 22461,
+    "start": "2022-02-08T19:51:13.458Z",
+    "end": "2022-02-08T19:51:28.763Z",
+    "duration": 15305,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,27 +18,27 @@
   },
   "results": [
     {
-      "uuid": "93238043-bfff-46aa-959b-dc8223710497",
+      "uuid": "8c21ce6d-6323-47b7-bc45-83b32e32ca38",
       "title": "",
-      "fullFile": "cypress/integration/cucumber-features/coupencreation.feature",
-      "file": "cypress/integration/cucumber-features/coupencreation.feature",
+      "fullFile": "cypress/integration/cucumber-features/registration.feature",
+      "file": "cypress/integration/cucumber-features/registration.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "9d1d7e28-760f-490b-aaf8-f339ccf83f12",
-          "title": "Coupen Code Creation Feature",
+          "uuid": "aa70f869-15b0-4151-9b80-cbf75a0a6a03",
+          "title": "Registering A New User On Dev Server",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Create a Coupen",
-              "fullTitle": "Coupen Code Creation Feature Create a Coupen",
+              "title": "Registeration Process of New User",
+              "fullTitle": "Registering A New User On Dev Server Registeration Process of New User",
               "timedOut": null,
-              "duration": 22292,
+              "duration": 15109,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "fcdc1e8f-9d6a-4717-a460-479f05305df8",
-              "parentUUID": "9d1d7e28-760f-490b-aaf8-f339ccf83f12",
+              "uuid": "42325327-903b-482a-903f-e97db5a576f6",
+              "parentUUID": "aa70f869-15b0-4151-9b80-cbf75a0a6a03",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fcdc1e8f-9d6a-4717-a460-479f05305df8"
+            "42325327-903b-482a-903f-e97db5a576f6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 22292,
+          "duration": 15109,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

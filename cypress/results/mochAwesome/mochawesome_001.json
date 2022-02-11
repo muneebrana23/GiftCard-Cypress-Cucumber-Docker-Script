@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-02-08T01:35:34.582Z",
-    "end": "2022-02-08T01:35:51.815Z",
-    "duration": 17233,
+    "failures": 1,
+    "start": "2022-02-08T19:50:33.080Z",
+    "end": "2022-02-08T19:51:04.226Z",
+    "duration": 31146,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,49 +18,53 @@
   },
   "results": [
     {
-      "uuid": "5a8cc46c-508d-47cb-a97f-25925cbedad2",
+      "uuid": "bc9835b2-d3ef-4145-901a-0020dfec3d30",
       "title": "",
-      "fullFile": "cypress/integration/cucumber-features/registration.feature",
-      "file": "cypress/integration/cucumber-features/registration.feature",
+      "fullFile": "cypress/integration/cucumber-features/login.feature",
+      "file": "cypress/integration/cucumber-features/login.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "6f2b1da1-7590-49d5-a284-0914577207f5",
-          "title": "Registering A New User On Dev Server",
+          "uuid": "9ffc2eb4-8e1d-4666-a51e-4639577d99d5",
+          "title": "Login Feauture Testing for Simplify Shopping",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Registeration Process of New User",
-              "fullTitle": "Registering A New User On Dev Server Registeration Process of New User",
+              "title": "Login as an Admin",
+              "fullTitle": "Login Feauture Testing for Simplify Shopping Login as an Admin",
               "timedOut": null,
-              "duration": 17005,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 15353,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "f57a97ce-dc5b-4602-ad29-ecf9af50cf32",
-              "parentUUID": "6f2b1da1-7590-49d5-a284-0914577207f5",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Oops! Why you’re here?' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Oops! Why you’re here?' but never did.\n    at Context.eval (https://dev.simplifyshopping.com/__cypress/tests?p=cypress\\integration\\cucumber-features\\login.feature:64:41)\n    at Context.resolveAndRunStepDefinition (https://dev.simplifyshopping.com/__cypress/tests?p=cypress\\integration\\cucumber-features\\login.feature:10545:29)\n    at Context.eval (https://dev.simplifyshopping.com/__cypress/tests?p=cypress\\integration\\cucumber-features\\login.feature:9866:35)",
+                "diff": null
+              },
+              "uuid": "49d12079-0f8a-4587-a766-2d97855017d2",
+              "parentUUID": "9ffc2eb4-8e1d-4666-a51e-4639577d99d5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "f57a97ce-dc5b-4602-ad29-ecf9af50cf32"
+          "passes": [],
+          "failures": [
+            "49d12079-0f8a-4587-a766-2d97855017d2"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17005,
+          "duration": 15353,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
